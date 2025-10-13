@@ -1,0 +1,19 @@
+[build]
+  # 先装前端依赖，再执行 hugo（避免 Netlify 未自动安装 npm 包）
+  command = "npm i --no-audit --no-fund && hugo --gc --minify --ignoreCache"
+  publish = "public"
+
+[build.environment]
+  # 你也可以换回自己本地在用的版本（例如 0.126.0）
+  HUGO_VERSION = "0.150.1"
+  HUGO_ENV = "production"
+  NODE_VERSION = "18"
+  TZ = "Europe/London"
+
+[context]
+  [context.branch-deploy]
+    command = "npm i --no-audit --no-fund && hugo -F -b $DEPLOY_PRIME_URL --ignoreCache"
+  [context.deploy-preview]
+    command = "npm i --no-audit --no-fund && hugo -F -b $DEPLOY_PRIME_URL --ignoreCache"
+  [context.production.environment]
+    HUGO_ENV = "production"
