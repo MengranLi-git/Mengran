@@ -1,0 +1,13 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "..\\themes\\github.com\\hugo-eureka-esr\\hugo-marble\\search\\_vendor\\github.com\\krisk\\Fuse\\dist\\*",
+    "..\\themes\\hugo-eureka-esr\\_vendor\\github.com\\FortAwesome\\Font-Awesome\\js-packages\\@fortawesome\\fontawesome-svg-core\\*",
+    "..\\themes\\hugo-eureka-esr\\_vendor\\github.com\\FortAwesome\\Font-Awesome\\js-packages\\@fortawesome\\free-brands-svg-icons\\*",
+    "..\\themes\\hugo-eureka-esr\\_vendor\\github.com\\FortAwesome\\Font-Awesome\\js-packages\\@fortawesome\\free-solid-svg-icons\\*"
+   ]
+  }
+ }
+}

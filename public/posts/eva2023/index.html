@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  
+><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Wee Extremes: EVA 2023 Data Challenge | Mengran Li</title>
+
+<meta name="generator" content="Hugo Eureka ESR 0.9.8" />
+<link rel="stylesheet" href="http://localhost:4321/css/eureka.min.f8ca8d19aff39f41f18407545ca21e4d5681482e0878398bac8625ccfbdf8b05e0c6a8edbae479a5fff517b24d47caaa.css">
+<script defer src="http://localhost:4321/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="http://localhost:4321/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="http://localhost:4321/js/fontawesome.min.5fe54a11d0ea7ebef727c1875338c6bafca7631942c741acd9499449933005949ba45a4518f475c9a928d929f9b4dc5d.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+
+
+
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4321/images/icon_hu_da75738d9ba596cc.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4321/images/icon_hu_595dc9573b6ca678.png">
+
+<meta name="description"
+  content="Statistical Methodology for Extreme Event Risk Assessment in the EVA 2023 Data Challenge.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Research",
+      "item":"http://localhost:4321/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"Wee Extremes: EVA 2023 Data Challenge",
+      "item":"http://localhost:4321/posts/eva2023/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:4321/posts/eva2023/"
+    },
+    "headline": "Wee Extremes: EVA 2023 Data Challenge | Mengran Li","datePublished": "2023-05-30T00:00:00+00:00",
+    "dateModified": "2023-05-30T00:00:00+00:00",
+    "wordCount":  420 ,
+    "author": {
+        "@type": "Person",
+        "name": ["Mengran Li"]
+    },
+    "publisher": {
+        "@type": "Person",
+        "name": "Mengran Li",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:4321/images/icon.png"
+        }
+        },
+    "description": "Statistical Methodology for Extreme Event Risk Assessment in the EVA 2023 Data Challenge."
+}
+</script>
+
+<meta property="og:title" content="Wee Extremes: EVA 2023 Data Challenge | Mengran Li" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="http://localhost:4321/images/icon.png">
+
+
+<meta property="og:url" content="http://localhost:4321/posts/eva2023/" />
+
+
+
+<meta property="og:description" content="Statistical Methodology for Extreme Event Risk Assessment in the EVA 2023 Data Challenge." />
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="Mengran Li" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2023-05-30T00:00:00&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2023-05-30T00:00:00&#43;00:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+
+
+
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">Mengran Li</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">Research</a>
+            <a href="/publications/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Publications</a>
+            <a href="/conference/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Conferences</a>
+            <a href="/teaching/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Teaching</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+  
+  
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
+    <div
+      class=" bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
+    >
+      <article class="prose">
+  <h1 class="mb-4">Wee Extremes: EVA 2023 Data Challenge</h1>
+
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2023-05-30</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>2 min read</span>
+  </div>
+
+  
+
+  
+</div>
+
+
+  
+  
+    
+
+  
+
+  <p>This project showcases my work as part of the <strong>&ldquo;Wee Extremes&rdquo;</strong> team during the <strong>EVA (2023) Conference Data Challenge</strong>. It is summarized in the peer-reviewed article, <em>“A wee exploration of techniques for risk assessments of extreme events”</em> (Extremes, 2024).</p>
+<hr>
+<h2 id="motivation--objectives">Motivation &amp; Objectives</h2>
+<p>Estimating risk measures for extreme events—such as high quantiles or joint exceedance probabilities—in environmental data is challenging due to:</p>
+<ul>
+<li>Non‑stationarity (covariate effects)</li>
+<li>Sparse data in the tail</li>
+<li>Multivariate dependence structure</li>
+<li>Extrapolation to unobserved extreme levels</li>
+</ul>
+<p>The EVA challenge provided a structured testbed (four tasks: C1–C4) involving both univariate and multivariate extremes in a simulated “Utopia” environment. The data were designed to mimic real environmental settings while preserving controlled truth for evaluation.</p>
+<p>Our goal was to build a composite methodology combining multiple statistical tools to robustly estimate extreme quantiles, tail probabilities, and joint behavior under uncertainty.</p>
+<hr>
+<h2 id="methodological-approach">Methodological Approach</h2>
+<p>Key components of our approach include:</p>
+<ul>
+<li>
+<p><strong>Non-Stationary Modeling</strong><br>
+Extended traditional Extreme Value Analysis (EVA) by incorporating covariate effects, primarily through <strong>GAM</strong> based <strong>Generalized Pareto Distribution (GPD)</strong> parameterizations to model the conditional tail.</p>
+</li>
+<li>
+<p><strong>Tail Extrapolation</strong><br>
+Rigorously compared different methods (e.g., <strong>GAM-GPD vs. Quantile Extrapolation</strong>) in Task C1 to select the optimal approach for predicting unobserved extreme levels.</p>
+</li>
+<li>
+<p><strong>Dependence Structure</strong><br>
+Used <strong>Copula frameworks</strong> for multivariate tasks (C3, C4) to effectively model joint exceedance probabilities beyond the limitations of marginal modeling.</p>
+</li>
+<li>
+<p><strong>Uncertainty Quantification</strong><br>
+We used <strong>Block Bootstrap methods</strong> to assess and validate model uncertainty. Crucially, the Block Bootstrap allowed us to perform <strong>model selection validation</strong> by generating pseudodata that preserves dependence structure, enabling us to test model performance against <strong>unobserved extreme data</strong> (far-tail extrapolation).</p>
+</li>
+<li>
+<p><strong>Stability &amp; Robustness</strong><br>
+Employed <strong>Model Averaging</strong> across bootstrap samples and <strong>Dimensionality Reduction</strong> techniques to mitigate overfitting and stabilize extreme quantile estimates.</p>
+</li>
+</ul>
+<hr>
+<h2 id="key-findings--insights-">Key Findings &amp; Insights 💡</h2>
+<p>Our results highlighted the critical impact of tail assumptions on risk estimates:</p>
+<ul>
+<li>
+<p><strong>Validation is Key for Extrapolation</strong><br>
+Our use of the Block Bootstrap was essential for validating model choices, especially when extrapolating to extreme return levels beyond the observed data range.</p>
+</li>
+<li>
+<p><strong>Tail Behavior is Critical</strong><br>
+Methods assuming lighter tail behavior than reality tended to severely underestimate risk, particularly for extreme return levels.</p>
+</li>
+<li>
+<p><strong>Dependence is Decisive</strong><br>
+Errors in tail dependence modeling can severely bias joint exceedance probability estimates (Tasks C3, C4).</p>
+</li>
+<li>
+<p><strong>Stability Matters</strong><br>
+Model averaging and bootstrap techniques were crucial to stabilize extreme quantile estimates and provide reliable uncertainty bounds.</p>
+</li>
+</ul>
+<hr>
+<h2 id="outcome--publication">Outcome &amp; Publication</h2>
+<ul>
+<li>
+<p>The work produced a peer-reviewed article:<br>
+<em>“A wee exploration of techniques for risk assessments of extreme events”</em> (<strong>Extremes, 2024</strong>).</p>
+</li>
+<li>
+<p>We contributed methodology that blends EVA, copula theory, dimensionality reduction, and bootstrap averaging.</p>
+</li>
+</ul>
+
+</article>
+
+
+      
+
+      
+
+
+
+
+      
+        <div class="py-2">
+  
+    <div class="my-8 flex flex-col items-center md:flex-row">
+      <a href="http://localhost:4321/authors/mengran-li/" class="md:me-4 text-primary-text h-24 w-24">
+        
+        
+          <i class="fas fa-user-circle fa-6x"></i>
+        
+      </a>
+      <div class="mt-4 w-full md:mt-0 md:w-auto">
+        <a
+          href="http://localhost:4321/authors/mengran-li/"
+          class="mb-2 block border-b pb-1 text-lg font-bold"
+        >
+          <h3>Mengran Li</h3>
+        </a>
+        <span class="block pb-2"></span>
+        
+      </div>
+    </div>
+  
+</div>
+
+      
+
+      
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+        <span class="text-primary-text block font-bold"
+          >Previous</span
+        >
+        <a href="http://localhost:4321/posts/eea/" class="block">Extreme Event Attribution (EEA)</a>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+    </div>
+  </div>
+
+
+      
+
+
+
+
+    </div>
+    
+      <div class="col-span-2">
+        
+        
+          <div
+  class="
+    bg-primary-bg
+   prose sticky top-16 z-10 hidden px-6 py-4 lg:block"
+>
+  <h3>On This Page</h3>
+</div>
+<div
+  class="sticky-toc  hidden px-6 pb-6 lg:block"
+>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#motivation--objectives">Motivation &amp; Objectives</a></li>
+    <li><a href="#methodological-approach">Methodological Approach</a></li>
+    <li><a href="#key-findings--insights-">Key Findings &amp; Insights 💡</a></li>
+    <li><a href="#outcome--publication">Outcome &amp; Publication</a></li>
+  </ul>
+</nav>
+</div>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    enableStickyToc();
+  });
+</script>
+
+        
+      </div>
+    
+
+    
+    
+  </div>
+
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        hljs.highlightAll();
+      });
+    </script>
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2025 Mengran Li
+ &middot;  Powered by the <a href="https://github.com/hugo-eureka-esr/hugo-eureka-esr" class="hover:text-eureka">Eureka ESR</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div>
+</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mengran Li</title>
+    <link>http://localhost:4321/</link>
+    <description>Recent content on Mengran Li</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2025 Mengran Li
+</copyright>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Causal Discovery in Extremes</title>
+      <link>http://localhost:4321/posts/asem/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/posts/asem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extreme quantile treatment effect (EQTE)</title>
+      <link>http://localhost:4321/posts/eqte/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/posts/eqte/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extreme Event Attribution (EEA)</title>
+      <link>http://localhost:4321/posts/eea/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/posts/eea/</guid>
+      <description>&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h2&gt;&#xA;&lt;p&gt;Extreme Event Attribution (EEA) is a vital field that assesses the extent to which human-induced climate change influences the probability and intensity of specific extreme weather events. As these events are becoming more frequent and intense, the need for robust statistical tools to underpin these assessments is more critical than ever.&lt;/p&gt;&#xA;&lt;p&gt;Attribution studies often rely on complex statistical models to characterize the behavior of rare events residing in the tail of the climate data distribution. The challenge is that climate extremes are inherently multivariate and high-dimensional. Therefore, the model choice is critical, as it must accurately capture the joint tail behaviour—the way these extreme variables occur together. Errors in modeling this tail dependence can lead to significant biases in attributing climate change&amp;rsquo;s influence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wee Extremes: EVA 2023 Data Challenge</title>
+      <link>http://localhost:4321/posts/eva2023/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/posts/eva2023/</guid>
+      <description>&lt;p&gt;This project showcases my work as part of the &lt;strong&gt;&amp;ldquo;Wee Extremes&amp;rdquo;&lt;/strong&gt; team during the &lt;strong&gt;EVA (2023) Conference Data Challenge&lt;/strong&gt;. It is summarized in the peer-reviewed article, &lt;em&gt;“A wee exploration of techniques for risk assessments of extreme events”&lt;/em&gt; (Extremes, 2024).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;motivation--objectives&#34;&gt;Motivation &amp;amp; Objectives&lt;/h2&gt;&#xA;&lt;p&gt;Estimating risk measures for extreme events—such as high quantiles or joint exceedance probabilities—in environmental data is challenging due to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Non‑stationarity (covariate effects)&lt;/li&gt;&#xA;&lt;li&gt;Sparse data in the tail&lt;/li&gt;&#xA;&lt;li&gt;Multivariate dependence structure&lt;/li&gt;&#xA;&lt;li&gt;Extrapolation to unobserved extreme levels&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The EVA challenge provided a structured testbed (four tasks: C1–C4) involving both univariate and multivariate extremes in a simulated “Utopia” environment. The data were designed to mimic real environmental settings while preserving controlled truth for evaluation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://localhost:4321/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/search/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
