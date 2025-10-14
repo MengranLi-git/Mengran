@@ -1,24 +1,26 @@
 {
-    "id": "77E9D004",
-    "path": "E:/R/MengranLi/postcss.config.js",
+    "id": "BCD6F5F2",
+    "path": "E:/R/MengranLi/package.json",
     "project_path": null,
-    "type": "js",
+    "type": "json",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1760396611758.0,
+    "created": 1760396300109.0,
     "source_on_save": false,
-    "relative_order": 3,
+    "relative_order": 2,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "5,29",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1760394974,
+    "lastKnownWriteTime": 1760396310,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1760394974,
+    "last_content_update": 1760396310451,
     "read_only": false,
     "read_only_alternatives": []
 }

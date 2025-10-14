@@ -14,7 +14,7 @@ social:
     url: mailto:m.li.3@research.gla.ac.uk
   - icon: linkedin
     iconPack: fab
-    url: https://www.linkedin.com/in/mengran-li
+    url: https://www.linkedin.com/in/mengran-li-2b3767252
   - icon: github
     iconPack: fab
     url: https://github.com/MengranLi-git
@@ -52,5 +52,5 @@ I am a graduating Ph.D. researcher specializing in the intersection of Extreme V
 I am currently exploring my next career steps and actively seeking Lectureship, research-intensive, or Postdoctoral positions (including competitive fellowships like EPSRC/Leverhulme). I welcome contact from supervisors or institutions interested in hosting my research. 
 
 My full CV is attached for your review.  
-<a class="btn btn-primary" href="/files/CV_MengranLi.pdf" target="_blank" style="margin-top: 10px;">📄 Download CV</a>
+<a class="btn btn-primary" href="/files/CV_Mengran_Li.pdf" target="_blank" style="margin-top: 10px;">📄 Download CV</a>
 
