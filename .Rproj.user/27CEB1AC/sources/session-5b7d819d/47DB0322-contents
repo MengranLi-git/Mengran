@@ -5,15 +5,11 @@ layout: single-card
 
 ---
 
-## Upcoming
+## Past
 
 - <a href="https://glen-scotland.github.io/glen/workshop.html" target="_blank">**First workshop of the Glasgow-Edinburgh Extremes Network**</a> \
   *Talk presentation*  
   Glasgow, UK · 11 December 2025
-
----
-
-## Past
 
 - <a href="https://www.isi-next.org/conferences/isi-wsc2025/" target="_blank">**ISI World Statistics Congress (WSC) 2025**</a> \
   *SIPS: IASC Data Analysis Competition Winners* \

@@ -8,10 +8,13 @@ at the University of Glasgow, where I assist with undergraduate and postgraduate
 and enjoy helping students develop their skills in statistics and data analysis.
 
 ## 🗓 2025–2026
-- Biostatistics
-- Flexible Regression
 - Introduction to R Programming
 - Introduction to Statistical Programming in R and Python
+- Flexible Regression
+- Biostatistics
+- Bayesian Statistics
+- Time Series
+- Advanced Predictive Model
 
 ## 🗓 2024–2025
 - Introduction to R Programming

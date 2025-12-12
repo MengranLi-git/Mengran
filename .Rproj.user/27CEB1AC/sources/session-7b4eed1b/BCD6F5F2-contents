@@ -1,9 +1,0 @@
-{
-  "name": "mengranli",
-  "version": "1.0.0",
-  "devDependencies": {
-    "postcss": "^8.4.30",
-    "postcss-cli": "^11.0.0",
-    "autoprefixer": "^10.4.16"
-  }
-}
