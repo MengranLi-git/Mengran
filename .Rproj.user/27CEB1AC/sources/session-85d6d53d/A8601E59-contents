@@ -52,7 +52,7 @@ I am a graduating Ph.D. researcher specializing in the intersection of Extreme V
 <div style="border-left: 3px solid #444; padding-left: 20px; margin: 20px 0;">
   
 <p style="font-size: 1.1em; color: #333; line-height: 1.6;">
-  <strong>📢 Update:</strong> I am open to research-intensive postdoctoral opportunities and collaborations, including jointly developing proposals for competitive fellowships (e.g., EPSRC, Leverhulme). I would also be happy to discuss longer-term academic roles (e.g., Lecturer or Research Fellow) in research-aligned environments. If my research aligns with your interests, please feel free to <a href="mailto:m.li.3@research.gla.ac.uk" style="text-decoration: underline;">contact me</a>.
+  <strong>📢 Update:</strong> I am open to research-intensive postdoctoral opportunities and collaborations, including jointly developing proposals for competitive postdoctoral fellowships (e.g., EPSRC, Leverhulme). I would also be happy to discuss longer-term academic roles (e.g., Lecturer or Research Fellow) in research-aligned environments. If my research aligns with your interests, please feel free to <a href="mailto:m.li.3@research.gla.ac.uk" style="text-decoration: underline;">contact me</a>.
 </p>
 
 
