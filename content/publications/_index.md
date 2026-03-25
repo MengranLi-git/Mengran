@@ -15,8 +15,15 @@ draft: false
 
 ## Preprints
 
-**Mengran Li\***, Daniela Castro-Camilo (2025).  
-*On the importance of tail assumptions in climate extreme event attribution*.  
+**Mengran Li\***, Daniela Castro-Camilo (2026).
+*Tail-Calibrated Estimation of Extreme Quantile Treatment Effects*.
+arXiv:2603.23309. [https://arxiv.org/abs/2603.23309](https://arxiv.org/abs/2603.23309)  
+[PDF](https://arxiv.org/pdf/2603.23309)
+
+---
+
+**Mengran Li\***, Daniela Castro-Camilo (2025).
+*On the importance of tail assumptions in climate extreme event attribution*.
 arXiv:2507.14019. [https://arxiv.org/abs/2507.14019](https://arxiv.org/abs/2507.14019)  
 [PDF](https://arxiv.org/pdf/2507.14019.pdf) | [Github](https://github.com/MengranLi-git/tail-eea)
 
@@ -24,9 +31,8 @@ arXiv:2507.14019. [https://arxiv.org/abs/2507.14019](https://arxiv.org/abs/2507.
 
 ## Working Papers
 
-**Mengran Li\***, Daniela Castro-Camilo (arXiv preprint, coming December 2025).  
-*Tail-Calibrated Estimation of Extreme Quantile Treatment Effects*.  
- 
+**Mengran Li\***, Daniela Castro-Camilo (in preparation).
+*Tail-Induced Asymmetry in High-Dimensional Causal Discovery with Latent Confounding*.
 
 ---
 
