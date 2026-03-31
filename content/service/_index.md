@@ -8,6 +8,8 @@ draft: false
 **Google Cloud Research Program** · Google Cloud · 2025  
 Awarded computational credits to support research on Causal Discovery in Extremes.
 
+**CDSAI Training and Conference Fund (Competitive Award)** · University of Glasgow · 2026
+
 **Conference Travel Awards** · International Association for Statistical Computing (IASC) · 2025  
 Received travel support for presenting at World Statistics Congress 2025.
 
