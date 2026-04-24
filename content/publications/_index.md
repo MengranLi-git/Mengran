@@ -36,12 +36,6 @@ arXiv:2507.14019. [https://arxiv.org/abs/2507.14019](https://arxiv.org/abs/2507.
 
 ---
 
-## Working Papers
-
-(None)
-
----
-
 ## Software
 
 **Mengran Li\***, Daniela Castro-Camilo (2025).  

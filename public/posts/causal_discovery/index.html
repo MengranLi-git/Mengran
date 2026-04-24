@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Causal Discovery in Extremes | Mengran Li</title>
+<title>Causal discovery in multivariate extremes | Mengran Li</title>
 
 <meta name="generator" content="Hugo Eureka ESR 0.9.8" />
 <link rel="stylesheet" href="https://mengranli.netlify.app/css/eureka.min.f8ca8d19aff39f41f18407545ca21e4d5681482e0878398bac8625ccfbdf8b05e0c6a8edbae479a5fff517b24d47caaa.css">
@@ -79,7 +79,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://mengranli.netlify.app/images/icon_hu_82ae1749bb88b2e9.png">
 
 <meta name="description"
-  content="Developing novel causal inference algorithms tailored for extreme value regimes, currently focusing on theoretical robustness and validation using extensive simulation studies.">
+  content="Tail-induced asymmetry enables causal structure learning in high-dimensional multivariate extremes. We develop methods that exploit directional information encoded by tail dependence patterns to recover causal graphs in extreme regimes.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,8 +91,8 @@
       "item":"https://mengranli.netlify.app/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"Causal Discovery in Extremes",
-      "item":"https://mengranli.netlify.app/posts/asem/"}]
+      "name":"Causal discovery in multivariate extremes",
+      "item":"https://mengranli.netlify.app/posts/causal_discovery/"}]
 }
 </script>
 
@@ -104,11 +104,15 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://mengranli.netlify.app/posts/asem/"
+        "@id": "https://mengranli.netlify.app/posts/causal_discovery/"
     },
-    "headline": "Causal Discovery in Extremes | Mengran Li","datePublished": "2025-10-01T00:00:00+00:00",
-    "dateModified": "2025-10-01T00:00:00+00:00",
-    "wordCount":  2 ,
+    "headline": "Causal discovery in multivariate extremes | Mengran Li","datePublished": "2026-04-01T00:00:00+00:00",
+    "dateModified": "2026-04-01T00:00:00+00:00",
+    "wordCount":  542 ,
+    "author": {
+        "@type": "Person",
+        "name": ["Mengran Li"]
+    },
     "publisher": {
         "@type": "Person",
         "name": "Mengran Li",
@@ -117,22 +121,22 @@
             "url": "https://mengranli.netlify.app/images/icon.png"
         }
         },
-    "description": "Developing novel causal inference algorithms tailored for extreme value regimes, currently focusing on theoretical robustness and validation using extensive simulation studies."
+    "description": "Tail-induced asymmetry enables causal structure learning in high-dimensional multivariate extremes. We develop methods that exploit directional information encoded by tail dependence patterns to recover causal graphs in extreme regimes."
 }
 </script>
 
-<meta property="og:title" content="Causal Discovery in Extremes | Mengran Li" />
+<meta property="og:title" content="Causal discovery in multivariate extremes | Mengran Li" />
 <meta property="og:type" content="article" />
 
 
 <meta property="og:image" content="https://mengranli.netlify.app/images/icon.png">
 
 
-<meta property="og:url" content="https://mengranli.netlify.app/posts/asem/" />
+<meta property="og:url" content="https://mengranli.netlify.app/posts/causal_discovery/" />
 
 
 
-<meta property="og:description" content="Developing novel causal inference algorithms tailored for extreme value regimes, currently focusing on theoretical robustness and validation using extensive simulation studies." />
+<meta property="og:description" content="Tail-induced asymmetry enables causal structure learning in high-dimensional multivariate extremes. We develop methods that exploit directional information encoded by tail dependence patterns to recover causal graphs in extreme regimes." />
 
 
 
@@ -148,10 +152,10 @@
 
 
 
-<meta property="article:published_time" content="2025-10-01T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2026-04-01T00:00:00&#43;00:00" />
 
 
-<meta property="article:modified_time" content="2025-10-01T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2026-04-01T00:00:00&#43;00:00" />
 
 
 
@@ -241,10 +245,10 @@
   
   <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
     <div
-      class="lg:col-start-2 bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
+      class=" bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
     >
       <article class="prose">
-  <h1 class="mb-4">Causal Discovery in Extremes</h1>
+  <h1 class="mb-4">Causal discovery in multivariate extremes</h1>
 
   <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
@@ -252,12 +256,12 @@
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >Oct 1, 2025</span
+      >Apr 1, 2026</span
     >
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>1 min read</span>
+    <span>3 min read</span>
   </div>
 
   
@@ -272,7 +276,104 @@
 
   
 
-  <p><strong>Status:</strong> Ongoing</p>
+  <h2 id="project-overview">Project Overview</h2>
+<p>Causal discovery — the problem of inferring causal structure from observational data — is central to modern machine learning and scientific inquiry. However, most existing methods rely on assumptions that break down in extreme regimes. Standard approaches assume approximate linearity, additivity, or at least well-behaved distributions — none of which hold for rare, high-impact events where causal understanding is most consequential.</p>
+<p>This project develops a fundamentally different approach: instead of fighting the complexity of extreme behaviour, we <strong>exploit it</strong>. Our key insight is that in multivariate extremes, the tail itself contains directional information that can reveal causal structure. When one variable causally influences another, predicting extreme values forward (cause to effect) is fundamentally easier than predicting backward — a signature that vanishes for non-causal relationships.</p>
+<p>By characterising and measuring this tail-induced asymmetry, we recover causal directed acyclic graphs (DAGs) in settings where traditional methods fail, including high-dimensional settings with latent confounders.</p>
+<h3 id="goals">Goals</h3>
+<ol>
+<li>
+<p><strong>Theoretical Foundation</strong>: Establish conditions under which tail asymmetry identifies causal direction in multivariate extremes.</p>
+</li>
+<li>
+<p><strong>Methodological Innovation</strong>: Develop practical algorithms combining extreme value statistics with causal discovery, handling latent confounders and $p \gg n$ settings.</p>
+</li>
+<li>
+<p><strong>Empirical Validation</strong>: Demonstrate the approach on real-world network data from hydrology and finance.</p>
+</li>
+</ol>
+<hr>
+<h2 id="methodology-s3me">Methodology: S3ME</h2>
+<p>We propose <strong>S3ME</strong> (<em>Sparse Structure diScovery in Multivariate Extremes</em>), a two-stage framework:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: left">Challenge</th>
+          <th style="text-align: left">S3ME Solution</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Skeleton Recovery</strong></td>
+          <td style="text-align: left">Latent confounders create spurious tail associations</td>
+          <td style="text-align: left">Proxy-adjusted penalised neighbourhood selection absorbs common shocks</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Edge Orientation</strong></td>
+          <td style="text-align: left">Causal direction is unidentifiable without tail structure</td>
+          <td style="text-align: left">Compare forward vs. backward tail prediction risk using max-linear envelope models</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>High Dimensions</strong></td>
+          <td style="text-align: left">DAG learning scales poorly with $p$</td>
+          <td style="text-align: left">EBIC penalty enforces sparsity; sure screening guarantees no true edge is missed</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Core Innovation</strong>: The tail prediction risk asymmetry is non-zero for causal pairs and negligible for non-causal ones, providing a consistent and estimable causal signal directly from extremes.</p>
+<hr>
+<h2 id="key-findings">Key Findings</h2>
+<h3 id="simulation-study">Simulation Study</h3>
+<p>We evaluate S3ME across dimensions $p = 20, 50, 100, 200$ with $n = 1{,}000$ observations and 50 replicates per setting:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Dimension</th>
+          <th style="text-align: center">F1 Score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">$p = 20$</td>
+          <td style="text-align: center">0.837</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$p = 50$</td>
+          <td style="text-align: center">0.790</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$p = 100$</td>
+          <td style="text-align: center">0.770</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$p = 200$</td>
+          <td style="text-align: center">0.710</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li><strong>Robustness</strong>: Performance holds under moderate misspecification of the tail model and in the presence of latent confounding.</li>
+<li><strong>Scaling</strong>: S3ME successfully recovers the DAG skeleton in $p \gg n$ settings where standard methods require strong parametric assumptions.</li>
+</ul>
+<h3 id="real-data-applications">Real Data Applications</h3>
+<p><strong>Danube River Network</strong>: We apply S3ME to daily flow maxima at 31 gauging stations across the Danube basin. The recovered causal graph aligns with known upstream-to-downstream flow relationships, correctly orienting the majority of edges without using any geographic prior information.</p>
+<p><strong>S&amp;P 500 Tail Risk</strong>: Applied to weekly minimum returns for 103 stocks over a 20-year period, S3ME identifies directional tail risk propagation across sectors, recovering known contagion pathways during historical market stress periods.</p>
+<hr>
+<h2 id="impact--outputs">Impact &amp; Outputs</h2>
+<p>📄 <strong>arXiv Preprint</strong><br>
+<em>Causal Discovery in Multivariate Extremes via Tail Asymmetry</em><br>
+<a href="https://arxiv.org/abs/2604.21620">arXiv:2604.21620</a> | <a href="https://arxiv.org/pdf/2604.21620">PDF</a></p>
+<p>🎯 <strong>Broader Significance</strong><br>
+This framework establishes a new paradigm for causal discovery by treating tail asymmetry as a source of causal information rather than a nuisance, with applications across:</p>
+<ul>
+<li><strong>Hydrology</strong>: Causal structure in river networks and flood propagation</li>
+<li><strong>Finance</strong>: Directional tail risk and systemic contagion mapping</li>
+<li><strong>Environmental science</strong>: Extreme event propagation across monitoring networks</li>
+</ul>
+<hr>
+<p><strong>Status:</strong> arXiv preprint (April 2026)</p>
+<p><strong>Paper:</strong> <a href="https://arxiv.org/abs/2604.21620">Causal Discovery in Multivariate Extremes via Tail Asymmetry</a></p>
 
 </article>
 
@@ -285,6 +386,30 @@
 
 
       
+        <div class="py-2">
+  
+    <div class="my-8 flex flex-col items-center md:flex-row">
+      <a href="https://mengranli.netlify.app/authors/mengran-li/" class="md:me-4 text-primary-text h-24 w-24">
+        
+        
+          <i class="fas fa-user-circle fa-6x"></i>
+        
+      </a>
+      <div class="mt-4 w-full md:mt-0 md:w-auto">
+        <a
+          href="https://mengranli.netlify.app/authors/mengran-li/"
+          class="mb-2 block border-b pb-1 text-lg font-bold"
+        >
+          <h3>Mengran Li</h3>
+        </a>
+        <span class="block pb-2"></span>
+        
+      </div>
+    </div>
+  
+</div>
+
+      
 
       
   <div
@@ -292,16 +417,11 @@
   >
     <div>
       
-        <span class="text-primary-text block font-bold"
-          >Previous</span
-        >
-        <a href="https://mengranli.netlify.app/posts/causal_discovery/" class="block">Causal discovery in multivariate extremes</a>
-      
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
       
         <span class="text-primary-text block font-bold">Next</span>
-        <a href="https://mengranli.netlify.app/posts/eqte/" class="block">Extreme quantile treatment effect (EQTE)</a>
+        <a href="https://mengranli.netlify.app/posts/asem/" class="block">Causal Discovery in Extremes</a>
       
     </div>
   </div>
@@ -313,6 +433,46 @@
 
 
     </div>
+    
+      <div class="col-span-2">
+        
+        
+          <div
+  class="
+    bg-primary-bg
+   prose sticky top-16 z-10 hidden px-6 py-4 lg:block"
+>
+  <h3>On This Page</h3>
+</div>
+<div
+  class="sticky-toc  hidden px-6 pb-6 lg:block"
+>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#project-overview">Project Overview</a>
+      <ul>
+        <li><a href="#goals">Goals</a></li>
+      </ul>
+    </li>
+    <li><a href="#methodology-s3me">Methodology: S3ME</a></li>
+    <li><a href="#key-findings">Key Findings</a>
+      <ul>
+        <li><a href="#simulation-study">Simulation Study</a></li>
+        <li><a href="#real-data-applications">Real Data Applications</a></li>
+      </ul>
+    </li>
+    <li><a href="#impact--outputs">Impact &amp; Outputs</a></li>
+  </ul>
+</nav>
+</div>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    enableStickyToc();
+  });
+</script>
+
+        
+      </div>
     
 
     
