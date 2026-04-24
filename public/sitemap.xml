@@ -2,50 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mengranli.netlify.app/posts/causal_discovery/</loc>
+    <loc>http://localhost:8080/posts/causal_discovery/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengranli.netlify.app/posts/asem/</loc>
+    <loc>http://localhost:8080/posts/eqte/</loc>
     <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengranli.netlify.app/posts/eqte/</loc>
-    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mengranli.netlify.app/posts/eea/</loc>
+    <loc>http://localhost:8080/posts/eea/</loc>
     <lastmod>2025-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengranli.netlify.app/authors/</loc>
+    <loc>http://localhost:8080/authors/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengranli.netlify.app/</loc>
+    <loc>http://localhost:8080/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengranli.netlify.app/authors/mengran-li/</loc>
+    <loc>http://localhost:8080/authors/mengran-li/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengranli.netlify.app/posts/</loc>
+    <loc>http://localhost:8080/posts/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengranli.netlify.app/posts/eva2023/</loc>
+    <loc>http://localhost:8080/posts/eva2023/</loc>
     <lastmod>2023-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengranli.netlify.app/categories/</loc>
+    <loc>http://localhost:8080/categories/</loc>
   </url><url>
-    <loc>https://mengranli.netlify.app/conference/</loc>
+    <loc>http://localhost:8080/conference/</loc>
   </url><url>
-    <loc>https://mengranli.netlify.app/authors/hugo-authors/</loc>
+    <loc>http://localhost:8080/authors/hugo-authors/</loc>
   </url><url>
-    <loc>https://mengranli.netlify.app/publications/</loc>
+    <loc>http://localhost:8080/publications/</loc>
   </url><url>
-    <loc>https://mengranli.netlify.app/search/</loc>
+    <loc>http://localhost:8080/search/</loc>
     <priority>0.1</priority>
   </url><url>
-    <loc>https://mengranli.netlify.app/series/</loc>
+    <loc>http://localhost:8080/series/</loc>
   </url><url>
-    <loc>https://mengranli.netlify.app/service/</loc>
+    <loc>http://localhost:8080/service/</loc>
   </url><url>
-    <loc>https://mengranli.netlify.app/tags/</loc>
+    <loc>http://localhost:8080/tags/</loc>
   </url><url>
-    <loc>https://mengranli.netlify.app/teaching/</loc>
+    <loc>http://localhost:8080/teaching/</loc>
   </url>
 </urlset>

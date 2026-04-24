@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conference on Mengran Li</title>
-    <link>https://mengranli.netlify.app/conference/</link>
+    <link>http://localhost:8080/conference/</link>
     <description>Recent content in Conference on Mengran Li</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; 2025 Mengran Li
 </copyright>
-    <atom:link href="https://mengranli.netlify.app/conference/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8080/conference/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
