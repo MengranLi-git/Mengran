@@ -16,6 +16,13 @@ draft: false
 ## Preprints
 
 **Mengran Li\***, Daniela Castro-Camilo (2026).
+*Causal Discovery in Multivariate Extremes via Tail Asymmetry*.
+arXiv:2604.21620. [https://arxiv.org/abs/2604.21620](https://arxiv.org/abs/2604.21620)  
+[PDF](https://arxiv.org/pdf/2604.21620)
+
+---
+
+**Mengran Li\***, Daniela Castro-Camilo (2026).
 *Tail-Calibrated Estimation of Extreme Quantile Treatment Effects*.
 arXiv:2603.23309. [https://arxiv.org/abs/2603.23309](https://arxiv.org/abs/2603.23309)  
 [PDF](https://arxiv.org/pdf/2603.23309)
@@ -31,8 +38,7 @@ arXiv:2507.14019. [https://arxiv.org/abs/2507.14019](https://arxiv.org/abs/2507.
 
 ## Working Papers
 
-**Mengran Li\***, Daniela Castro-Camilo (in preparation).
-*Tail-Induced Asymmetry in High-Dimensional Causal Discovery with Latent Confounding*.
+(None)
 
 ---
 
