@@ -1,17 +1,17 @@
 ---
 title: Mengran Li
 draft: false
-role: Postdoctoral Researcher in Statistics
+role: PhD Candidate in Statistics
 avatar: images/icon.png
 bio: Extreme value theory | Causal inference
 organization:
-  name: Smith School of Enterprise and the Environment, University of Oxford
-  url: https://www.smithschool.ox.ac.uk/
+  name: School of Mathematics and Statistics, University of Glasgow 
+  url: https://www.gla.ac.uk/schools/mathematicsstatistics/  
 
 social:
   - icon: envelope
     iconPack: fas
-    url: mailto:mengran.li@smithschool.ox.ac.uk
+    url: mailto:m.li.3@research.gla.ac.uk
   - icon: linkedin
     iconPack: fab
     url: https://www.linkedin.com/in/mengran-li-2b3767252
@@ -34,7 +34,7 @@ widget:
     position:
     # Options: sm, md, lg and xl. Default is md.
     scale:
-
+  
   background:
     # Options: primary, secondary, tertiary or any valid color value. Default is primary.
     color: secondary
@@ -44,15 +44,15 @@ widget:
     # Options: center, top, right, bottom, left.
     position:
     # Options: fixed, local, scroll.
-    attachment:
+    attachment: 
 ---
 
-I am a Postdoctoral Researcher in Statistics at the University of Oxford. My research develops causal inference methodology for rare and extreme events, spanning causal discovery, extreme treatment effects, and climate event attribution. By combining causal inference with extreme value theory, I aim to support reliable decision-making in high-impact settings, including climate risk and conservation.
+I am a graduating Ph.D. researcher specializing in the intersection of Extreme Value Theory (EVT) and Causal Inference, with a focus on applications in Climate Extremes and Environmental Statistics. 
 
 <div style="border-left: 3px solid #444; padding-left: 20px; margin: 20px 0;">
-
+  
 <p style="font-size: 1.1em; color: #333; line-height: 1.6;">
-  <strong>📢 Update:</strong> I joined the Smith School of Enterprise and the Environment at the University of Oxford in August 2026. My current work focuses on developing a causal inference platform for evaluating conservation interventions. I welcome research collaborations at the intersection of causal inference, extreme value theory, climate risk, and environmental applications. Please feel free to <a href="mailto:mengran.li@smithschool.ox.ac.uk" style="text-decoration: underline;">contact me</a>.
+  <strong>📢 Update:</strong> I am open to research-intensive postdoctoral opportunities and collaborations, including jointly developing proposals for competitive postdoctoral fellowships (e.g., EPSRC, Leverhulme). I would also be happy to discuss longer-term academic roles (e.g., Lecturer or Research Fellow) in research-aligned environments. If my research aligns with your interests, please feel free to <a href="mailto:m.li.3@research.gla.ac.uk" style="text-decoration: underline;">contact me</a>.
 </p>
 
 

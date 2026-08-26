@@ -3,7 +3,9 @@ title: "Teaching"
 layout: single-card
 ---
 
-From 2022 to 2026, I served as a tutor and demonstrator in the School of Mathematics and Statistics at the University of Glasgow, supporting undergraduate and postgraduate teaching in statistics, data analysis, and statistical computing.
+I currently serve as a tutor and demonstrator in the School of Mathematics and Statistics 
+at the University of Glasgow, where I assist with undergraduate and postgraduate courses 
+and enjoy helping students develop their skills in statistics and data analysis.
 
 ## 🗓 2025–2026
 - Introduction to R Programming

@@ -1,24 +1,15 @@
 ---
-title: Academic Appointments & Education
+title: Education
 draft: false
 experiences:
-  - title: Postdoctoral Researcher in Statistics
-    organization:
-      name: Smith School of Enterprise and the Environment, University of Oxford
-      url: https://www.smithschool.ox.ac.uk/
-    dates: "2026 – Present"
-    location: Oxford, UK
-    writeup: >
-      Developing causal inference methods and a modular analysis platform for evaluating conservation interventions.
-
   - title: Doctor of Philosophy in Statistics
     organization:
       name: University of Glasgow
       url: https://www.gla.ac.uk/
-    dates: "2022 – 2026"
+    dates: "2022 – Present"
     location: Glasgow, UK
     writeup: >
-      Thesis: *Causal Inference in the Tails: Extreme Event Attribution, Treatment Effects, and Structural Discovery.* Supervised by Dr. Daniela Castro-Camilo.
+      PhD in Statistics under the supervision of Dr. Daniela Castro-Camilo.
       
   - title: Master of Science in Statistics (with Distinction)
     organization:

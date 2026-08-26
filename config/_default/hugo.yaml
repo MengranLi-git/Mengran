@@ -7,7 +7,7 @@ theme: "hugo-eureka-esr"
 
 pagination.pagerSize: 3
 copyright: >
-  &copy; 2026 Mengran Li
+  &copy; 2025 Mengran Li
 enableEmoji: true
 summaryLength: 75
 
