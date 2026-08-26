@@ -18,7 +18,14 @@ Received travel support for presenting at World Statistics Congress 2025.
 ## Organizer & Host
 
 <a href="https://glen-scotland.github.io/glen" target="_blank">**Glasgow-Edinburgh Extremes Network (GLE²N)**</a> · 2025 – Present  
-Organizer for joint seminars focused on Extreme Value Theory.
+Co-organizer of the monthly joint seminar series focused on Extreme Value Theory, coordinating invited speakers and supporting seminar delivery. Initiated and organised the thematic session series **"Causality for Extremes"**, covering causal discovery, estimation, and attribution in extreme regimes.
+
+---
+
+## Summer School
+
+<a href="https://glen-scotland.github.io/glen" target="_blank">**Edinburgh Summer School on Generative AI for Extremes**</a> · GLE²N · 2026  
+Co-organizer of a GLE²N summer school for PhD students and early-career researchers at the interface of generative AI and extreme value theory.
 
 ---
 
@@ -26,3 +33,6 @@ Organizer for joint seminars focused on Extreme Value Theory.
 
 <a href="https://www.cambridge.org/core/journals/data-centric-engineering" target="_blank">**Data-Centric Engineering**</a>, Cambridge University Press · 2025 – Present  
 Invited reviewer for the journal.
+
+**Annals of Applied Statistics** · 2025 – Present  
+Co-reviewer (with supervisor).
