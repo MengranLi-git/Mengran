@@ -1,0 +1,294 @@
+{{ define "main" }}
+
+<article class="distill-article">
+
+  {{/* Hero */}}
+  <header class="distill-hero">
+    <div class="distill-hero-inner">
+      {{ with .Params.eyebrow }}
+        <div class="distill-eyebrow">{{ . }}</div>
+      {{ end }}
+      <h1 class="distill-title">{{ .Title }}</h1>
+      {{ with .Params.hero_subtitle }}
+        <p class="distill-subtitle">{{ . | safeHTML }}</p>
+      {{ end }}
+
+      <div class="distill-meta">
+        {{ with .GetTerms "authors" }}
+          <div class="distill-meta-block">
+            <div class="distill-meta-label">Author</div>
+            <div class="distill-meta-value">
+              {{ range . }}
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+
+        {{ with .Date }}
+          <div class="distill-meta-block">
+            <div class="distill-meta-label">Published</div>
+            <div class="distill-meta-value">{{ .Format "January 2, 2006" }}</div>
+          </div>
+        {{ end }}
+
+        {{ with .Params.paper_url }}
+          <div class="distill-meta-block">
+            <div class="distill-meta-label">Paper</div>
+            <div class="distill-meta-value">
+              <a href="{{ . }}" target="_blank" rel="noopener">arXiv</a>
+              {{ with $.Params.paper_pdf }}
+                &nbsp;·&nbsp;<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </header>
+
+  {{/* Body */}}
+  <div class="distill-body prose prose-lg">
+    {{ .Content }}
+  </div>
+
+</article>
+
+<style>
+  .distill-article {
+    --d-accent: var(--color-eureka);
+    --d-accent-soft: var(--color-tertiary-bg);
+    --d-text: var(--color-primary-text);
+    --d-muted: var(--color-secondary-text);
+    --d-subtle: var(--color-tertiary-text);
+    --d-border: var(--color-tertiary-bg);
+    --d-bg: var(--color-primary-bg);
+    --d-bg-soft: var(--color-secondary-bg);
+    --d-shadow: 0 3px 12px rgba(0, 0, 0, 0.025);
+    font-family: var(--fonts-eureka);
+  }
+
+  .distill-hero {
+    margin: -1rem calc(50% - 50vw) 2.75rem;
+    padding: 3.75rem calc(50vw - 50%) 3.1rem;
+    background: var(--d-bg-soft);
+    border-bottom: 1px solid var(--d-border);
+  }
+  .distill-hero-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+  .distill-eyebrow {
+    font-family: var(--fonts-eureka);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--d-accent);
+    margin-bottom: 0.9rem;
+  }
+  .distill-title {
+    font-size: clamp(1.85rem, 4vw, 2.75rem);
+    line-height: 1.14;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--d-text);
+  }
+  .distill-subtitle {
+    font-size: 1.08rem;
+    line-height: 1.55;
+    color: var(--d-muted);
+    margin: 0 0 2rem 0;
+    font-weight: 400;
+  }
+  .distill-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--d-border);
+  }
+  .distill-meta-label {
+    font-family: var(--fonts-eureka);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--d-muted);
+    margin-bottom: 0.35rem;
+  }
+  .distill-meta-value {
+    font-size: 0.95rem;
+    color: var(--d-text);
+  }
+  .distill-meta-value a {
+    color: var(--d-text);
+    text-decoration: underline;
+    text-decoration-color: var(--d-border);
+    text-underline-offset: 3px;
+  }
+  .distill-meta-value a:hover { text-decoration-color: var(--d-accent); }
+
+  .distill-body {
+    max-width: 780px;
+    margin: 0 auto 4rem;
+    padding: 0 1.25rem;
+  }
+  .distill-body h2 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-top: 3.2rem;
+    margin-bottom: 1rem;
+  }
+  .distill-body h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+  }
+  .distill-body p { line-height: 1.7; }
+
+  .d-lead {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: var(--d-text);
+    background: var(--d-bg-soft);
+    border: 1px solid var(--d-border);
+    border-left: 3px solid var(--d-accent);
+    border-radius: 8px;
+    box-shadow: var(--d-shadow);
+    padding: 1.2rem 1.35rem;
+    margin: 0 0 2.4rem 0;
+  }
+
+  .d-wide {
+    margin-left: calc(50% - 50vw + 1.25rem);
+    margin-right: calc(50% - 50vw + 1.25rem);
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 1024px) {
+    .d-wide {
+      width: calc(100vw - 3rem);
+      max-width: 1100px;
+      margin-left: calc(50% - min(50vw, 550px) + 1.25rem);
+      margin-right: calc(50% - min(50vw, 550px) + 1.25rem);
+    }
+  }
+
+  .d-figure {
+    margin: 2.5rem 0;
+    padding: 1.2rem;
+    background: var(--d-bg-soft);
+    border: 1px solid var(--d-border);
+    border-radius: 8px;
+    box-shadow: var(--d-shadow);
+    overflow-x: auto;
+  }
+  .d-figure svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 620px;
+  }
+  .d-figure-caption {
+    font-size: 0.88rem;
+    color: var(--d-muted);
+    margin-top: 0.9rem;
+    line-height: 1.5;
+    padding: 0 0.25rem;
+  }
+  .d-figure-caption b { color: var(--d-text); font-weight: 600; }
+
+  .d-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 2rem 0;
+  }
+  @media (min-width: 768px) {
+    .d-cards { grid-template-columns: 1fr 1fr; }
+  }
+  .d-card {
+    border: 1px solid var(--d-border);
+    border-radius: 8px;
+    padding: 1.5rem 1.5rem 1.75rem;
+    background: var(--d-bg-soft);
+    box-shadow: var(--d-shadow);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .d-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.035);
+  }
+  .d-card-tag {
+    font-family: var(--fonts-eureka);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--d-accent);
+    margin-bottom: 0.5rem;
+  }
+  .d-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.6rem 0;
+  }
+  .d-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--d-text);
+    margin: 0;
+  }
+
+  .d-cta {
+    margin: 4rem 0 2rem;
+    padding: 2rem;
+    border: 1px solid var(--d-border);
+    border-left: 3px solid var(--d-accent);
+    border-radius: 8px;
+    background: var(--d-bg-soft);
+    box-shadow: var(--d-shadow);
+  }
+  .d-cta h3 { margin-top: 0; }
+  .d-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .d-btn {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    border-radius: 5px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .d-btn-primary {
+    background: var(--d-accent);
+    color: white !important;
+  }
+  .d-btn-primary:hover { filter: brightness(0.92); }
+  .d-btn-ghost {
+    border: 1px solid var(--d-border);
+    color: var(--d-text) !important;
+    background: transparent;
+  }
+  .d-btn-ghost:hover { background: var(--d-bg-soft); }
+
+  /* SVG labels */
+  .d-svg-label {
+    font-family: var(--fonts-eureka);
+    font-size: 13px;
+    fill: var(--d-text);
+  }
+  .d-svg-muted {
+    font-family: var(--fonts-eureka);
+    font-size: 12px;
+    fill: var(--d-muted);
+  }
+</style>
+
+{{ end }}

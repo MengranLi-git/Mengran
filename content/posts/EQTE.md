@@ -5,6 +5,15 @@ date: 2025-10-01
 weight: 2
 draft: false
 toc: true
+paper_url: https://arxiv.org/abs/2603.23309
+paper_pdf: https://arxiv.org/pdf/2603.23309
+project_area: Causal inference
+project_summary: "Estimating treatment effects in the far tail, where rare outcomes matter but direct data are scarce."
+project_status: "arXiv preprint; journal resubmission in preparation"
+project_methods:
+- Extreme quantiles
+- Treatment effects
+- Tail calibration
 ---
 
 ## Project Overview
@@ -78,6 +87,6 @@ This framework establishes a new foundation for causal inference on rare, high-i
 
 ---
 
-**Status:** arXiv preprint (March 2026)
+**Status:** arXiv preprint; journal resubmission in preparation
 
 **Paper:** [Tail-Calibrated Estimation of Extreme Quantile Treatment Effects](https://arxiv.org/abs/2603.23309)

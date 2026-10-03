@@ -5,6 +5,14 @@ date: 2025-07-01
 weight: 2
 draft: false
 toc: true
+paper_url: https://arxiv.org/abs/2507.14019
+project_area: Climate extremes
+project_summary: "Testing how tail-dependence assumptions change climate extreme event attribution conclusions."
+project_status: "Revised manuscript submitted to Climatic Change; eFCM R package released on CRAN"
+project_methods:
+- Event attribution
+- Tail dependence
+- Spatial extremes
 authors:
 - Mengran Li
 ---
@@ -76,10 +84,8 @@ We applied the models to two distinct climate datasets: **European winter precip
 
 This project has led to significant outputs and recognition within the statistical and climate communities.
 
-* 📄 **Journal Article** A manuscript, *"On the importance of tail assumptions in climate extreme event attribution"*, is currently **under review**.
+* 📄 **Journal Article** A revised manuscript, *"On the importance of tail assumptions in climate extreme event attribution"*, has been submitted to **Climatic Change**.
     [arXiv:2507.14019](https://arxiv.org/abs/2507.14019)
 * 🧰 **Software Release** Developed and released the **eFCM R package on CRAN**.
 * 🏆 **Major Award:** Received the **3rd Place Award** in the IASC Data Analysis Competition, resulting in an invited talk and award ceremony at the **ISI World Statistics Congress 2025**.
 * 🏅 **Presentations:** Talks (WSC 2025 - Travel grant awarded, STOR-i Extremes Workshop, RSC 2023 - Travel grant recipient) and poster (RSS 2025).
-
-
