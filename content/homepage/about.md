@@ -56,7 +56,7 @@ I am a Postdoctoral Research Associate at the University of Oxford. My research 
 
 <p style="font-size: 1.1em; color: #333; line-height: 1.4; margin-bottom: 0.4em;"><strong>📢 News</strong></p>
 <ul style="font-size: 1em; color: #333; line-height: 1.6; margin-top: 0;">
-  <li><strong>Sep 2026</strong> · Invited seminar, School of Mathematics and Statistics, University of Glasgow.</li>
+  <li><strong>Sep 2026</strong> · Seminar talk, School of Mathematics and Statistics, University of Glasgow.</li>
   <li><strong>Aug 2026</strong> · Joined the Smith School of Enterprise and the Environment, University of Oxford.</li>
 </ul>
 
