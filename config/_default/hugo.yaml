@@ -5,10 +5,11 @@ title: Mengran Li
 theme: "hugo-eureka-esr"
 # If you cannot access the Github mirror, please let us know at https://github.com/orgs/hugo-eureka-esr/discussions/15
 
-pagination.pagerSize: 3
+pagination.pagerSize: 10
 copyright: >
-  &copy; 2025 Mengran Li
+  &copy; 2026 Mengran Li
 enableEmoji: true
+enableRobotsTXT: true
 summaryLength: 75
 
 defaultContentLanguage: en
