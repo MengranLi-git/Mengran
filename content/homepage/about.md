@@ -15,8 +15,8 @@ social:
   - icon: linkedin
     iconPack: fab
     url: https://www.linkedin.com/in/mengran-li-2b3767252
-  - icon: google-scholar
-    iconPack: fab
+  - icon: graduation-cap
+    iconPack: fas
     url: https://scholar.google.com/citations?user=vrbpmIkAAAAJ
   - icon: github
     iconPack: fab
