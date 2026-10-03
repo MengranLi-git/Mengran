@@ -7,6 +7,10 @@ layout: single-card
 
 ## Past
 
+- **Statistics Seminar, School of Mathematics and Statistics, University of Glasgow**  
+  *Invited talk*  
+  Glasgow, UK · 23 September 2026
+
 - <a href="https://glen-scotland.github.io/glen/workshop.html" target="_blank">**First workshop of the Glasgow-Edinburgh Extremes Network**</a> \
   *Talk presentation*  
   Glasgow, UK · 11 December 2025

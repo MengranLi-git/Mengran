@@ -8,6 +8,8 @@ experiences:
       url: https://www.smithschool.ox.ac.uk/
     dates: "2026 – Present"
     location: Oxford, UK
+    writeup: >
+      Project: *AI-enabled causal evaluation of nature conservation.*
 weight: 2
 widget:
   handler: experience

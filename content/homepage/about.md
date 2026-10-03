@@ -2,7 +2,7 @@
 title: Mengran Li
 draft: false
 role: Postdoctoral Research Associate
-avatar: images/icon.png
+avatar: images/icon.jpg
 bio: Extreme value theory | Causal inference
 organization:
   name: Smith School of Enterprise and the Environment, University of Oxford
@@ -15,6 +15,9 @@ social:
   - icon: linkedin
     iconPack: fab
     url: https://www.linkedin.com/in/mengran-li-2b3767252
+  - icon: google-scholar
+    iconPack: fab
+    url: https://scholar.google.com/citations?user=vrbpmIkAAAAJ
   - icon: github
     iconPack: fab
     url: https://github.com/MengranLi-git
@@ -51,8 +54,11 @@ I am a Postdoctoral Research Associate at the University of Oxford. My research 
 
 <div style="border-left: 3px solid #444; padding-left: 20px; margin: 20px 0;">
 
-<p style="font-size: 1.1em; color: #333; line-height: 1.6;">
-  <strong>📢 Update:</strong> I joined the Smith School of Enterprise and the Environment at the University of Oxford in August 2026.</p>
+<p style="font-size: 1.1em; color: #333; line-height: 1.4; margin-bottom: 0.4em;"><strong>📢 News</strong></p>
+<ul style="font-size: 1em; color: #333; line-height: 1.6; margin-top: 0;">
+  <li><strong>Sep 2026</strong> · Invited seminar, School of Mathematics and Statistics, University of Glasgow.</li>
+  <li><strong>Aug 2026</strong> · Joined the Smith School of Enterprise and the Environment, University of Oxford.</li>
+</ul>
 
 
 <a class="btn btn-primary" href="/files/CV_Mengran_Li.pdf" target="_blank">📄 Download Full CV</a>

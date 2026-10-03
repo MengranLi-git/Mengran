@@ -32,6 +32,7 @@ arXiv:2603.23309. [https://arxiv.org/abs/2603.23309](https://arxiv.org/abs/2603.
 **Mengran Li\***, Daniela Castro-Camilo (2025).
 *On the importance of tail assumptions in climate extreme event attribution*.
 arXiv:2507.14019. [https://arxiv.org/abs/2507.14019](https://arxiv.org/abs/2507.14019)  
+Minor revision under review at *Climatic Change*.  
 [PDF](https://arxiv.org/pdf/2507.14019.pdf) | [Github](https://github.com/MengranLi-git/tail-eea)
 
 ---

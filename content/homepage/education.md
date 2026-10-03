@@ -15,7 +15,7 @@ experiences:
     organization:
       name: University of Glasgow
       url: https://www.gla.ac.uk/
-    dates: "2020 – 2021"
+    dates: "2021 – 2022"
     location: Glasgow, UK
     writeup: >
       Dissertation: *Spatiotemporal modelling and prediction of average flows in Scotland based on generalized additive models.*

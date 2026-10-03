@@ -10,6 +10,13 @@ Awarded computational credits to support research on Causal Discovery in Extreme
 
 **CDSAI Training and Conference Fund (Competitive Award)** · University of Glasgow · 2026
 
+**3rd Place, IASC Data Analysis Competition** · ISI World Statistics Congress · 2025  
+Travel grant awarded to present in The Hague, Netherlands.
+
+**Fully funded PhD scholarship** · University of Glasgow · 2022 – 2026
+
+**Academic Scholarships** · Southwestern University of Finance and Economics · 2015 – 2019
+
 **Conference Travel Awards** · International Association for Statistical Computing (IASC) · 2025  
 Received travel support for presenting at World Statistics Congress 2025.
 
@@ -32,6 +39,9 @@ Co-organizer of a GLE²N summer school for PhD students and early-career researc
 ## Review
 
 <a href="https://www.cambridge.org/core/journals/data-centric-engineering" target="_blank">**Data-Centric Engineering**</a>, Cambridge University Press · 2025 – Present  
+Invited reviewer for the journal.
+
+**Journal of Flood Risk Management** · 2025 – Present  
 Invited reviewer for the journal.
 
 **Annals of Applied Statistics** · 2025 – Present  
